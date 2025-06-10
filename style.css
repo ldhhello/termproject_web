@@ -79,3 +79,8 @@ header a {
 .profile-box {
     gap: 4rem;
 }
+
+#simple-introduce p {
+    width: 16rem;
+    word-wrap: break-word;
+}
