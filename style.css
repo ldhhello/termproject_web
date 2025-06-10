@@ -8,13 +8,27 @@
     font-weight: 400;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Pretendard-Bold';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+a.selected {
+    font-family: 'Pretendard-Bold';
+}
 
 body {
     font-family: 'Pretendard-Regular';
 }
 
-body, h1, h2, h3, h4, h5, h6 {
+body, h1, h2, h3, h4, h5, h6, p {
     margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Pretendard-Bold';
+    font-weight: normal;
 }
 
 header {
@@ -54,13 +68,13 @@ header a {
 .fullscreen-box {
     width: 100vw;
     height: 100vh;
-    background-color: white;
+    background-color: #f0f6f7;
 }
 
 #profile-img {
-    width: 13rem;
-    height: 13rem;
-    border-radius: 18px;
+    width: 14rem;
+    height: 14rem;
+    border-radius: 19px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     animation: fadein 1s ease 0.2s both;
 }
@@ -83,16 +97,22 @@ header a {
 }
 
 .profile-box {
-    gap: 4rem;
+    gap: 4.5rem;
 }
 
 #simple-introduce {
     animation: fadein 1s ease 0.4s both;
+    gap: 0.54rem;
+}
+
+#simple-introduce h1 {
+    margin-bottom: 0.83rem;
 }
 
 #simple-introduce p {
-    width: 16rem;
+    width: 22rem;
     word-wrap: break-word;
+    font-size: 1.1rem;
 }
 
 #link-box {
@@ -103,5 +123,5 @@ header a {
 }
 
 #link-box img {
-    height: 1.05rem;
+    height: 1.08rem;
 }
