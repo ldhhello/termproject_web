@@ -1,0 +1,69 @@
+body, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+header {
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    display: flex;
+    flex-direction: row;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 1.2rem;
+
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.46);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.3px);
+    -webkit-backdrop-filter: blur(9.3px);
+}
+
+header a {
+    background: none;
+    color: black;
+    text-decoration: none;
+    border: none;
+    box-sizing: border-box;
+    padding: 1rem;
+    margin: 0.3rem;
+    font-size: 1.3rem;
+}
+
+.fullscreen-box {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+}
+
+#profile-img {
+    width: 13rem;
+    height: 13rem;
+    border-radius: 18px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-box {
+    gap: 4rem;
+}
