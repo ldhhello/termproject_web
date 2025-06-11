@@ -27,7 +27,7 @@ body {
 body, h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, strong {
     font-family: 'Pretendard-Bold';
     font-weight: normal;
 }
@@ -53,6 +53,8 @@ header {
     -webkit-backdrop-filter: blur(9.3px);
 
     animation: fadein 1s ease 0s both;
+
+    z-index: 1000;
 }
 
 header a {
@@ -126,3 +128,4 @@ header a {
 #link-box img {
     height: 1.08rem;
 }
+

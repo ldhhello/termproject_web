@@ -1,0 +1,76 @@
+.top-margin {
+    height: 14rem;
+    /* background-color: red; */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+hr {
+    width: 90%;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+footer {
+    margin-top: 5rem;
+    height: 10rem;
+    width: 100%;
+    background-color: red;
+}
+
+.grid-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+}
+
+.project-box {
+    box-sizing: border-box;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-top: 5rem;
+    gap: 2rem;
+}
+
+.project-item {
+    height: 13rem;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.46);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.3px);
+    -webkit-backdrop-filter: blur(9.3px);
+}
+
+li img {
+    height: 1.1rem;
+    vertical-align: bottom;
+    padding-right: 0.3rem;
+}
+ul {
+    padding: 0;
+    margin-top: 3rem;
+}
+li {
+    list-style-type: none;
+
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.46);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.3px);
+    -webkit-backdrop-filter: blur(9.3px);
+
+    padding: 1rem;
+
+    margin-bottom: 1rem;
+}
+.bigger-image {
+    transform: scale(1.5);
+    padding-left: 0.1rem;
+    padding-right: 0.5rem;
+}
