@@ -59,6 +59,10 @@ footer {
     height: 12rem;
     object-fit: contain;
 }
+.project-item a img {
+    height: 0.78rem !important;
+    margin-left: 0.11rem;
+}
 
 li img {
     height: 1.1rem;
