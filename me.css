@@ -26,18 +26,18 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
+    max-width: 90rem;
 }
 
 .project-box {
     box-sizing: border-box;
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
     padding-top: 5rem;
     gap: 2rem;
 
     animation: fadein 1s ease 0.15s both;
 }
-
 .project-item {
     box-sizing: border-box;
     height: 18rem;
@@ -55,7 +55,7 @@ footer {
     justify-content: center;
     gap: 0.5rem;
 
-    min-width: 23rem;
+    min-width: 22rem;
 }
 .project-item img {
     height: 12rem;
@@ -131,4 +131,56 @@ li:nth-child(6) {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.22);
     backdrop-filter: blur(9.3px);
     -webkit-backdrop-filter: blur(9.3px);
+}
+
+@media (max-width: 1420px) {
+    .project-box {
+        grid-template-columns: 1fr 1fr;
+        max-width: 60rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        gap: 1.7rem;
+    }
+    .project-item {
+        min-width: 20rem;
+    }
+}
+@media (max-width: 840px) {
+    .project-box {
+        grid-template-columns: 1fr;
+        max-width: 37rem;
+        padding-left: 6rem;
+        padding-right: 6rem;
+        gap: 1.4rem;
+    }
+    .project-item {
+        min-width: 19rem;
+    }
+}
+@media (max-width: 600px) {
+    .project-box {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .tech-stack {
+        font-size: 0.95rem;
+    }
+}
+@media (max-width: 450px) {
+    .project-item {
+        height: 16rem;
+        min-width: 17.3rem;
+    }
+    .project-item img {
+        height: 10rem;
+    }
+    .tech-stack {
+        font-size: 0.88rem;
+    }
+}
+@media (max-width: 400px) {
+    .project-box {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
 }
