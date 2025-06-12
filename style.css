@@ -1,5 +1,19 @@
-@import url('animation.css');
+@keyframes fadein {
+    from {
+        transform: translateY(1.7rem) scale(0.93);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
+* {
+    /* transition: padding 0.4s ease, margin 0.4s ease, width 0.4s ease; */
+    transition: all 0.4s ease;
+}
+
+/* ---------------------- */
 
 /* font from: https://noonnu.cc/font_page/694 */
 @font-face {
@@ -250,5 +264,209 @@ header a {
         flex-direction: column;
         align-items: center;
         gap: 2rem;
+    }
+}
+
+/* --------------------------------- */
+
+.top-margin {
+    height: 14rem;
+    /* background-color: red; */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+hr {
+    width: 90%;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+footer {
+    margin-top: 5rem;
+    height: 10rem;
+    width: 100%;
+    background-color: red;
+}
+
+.grid-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    max-width: 90rem;
+}
+
+.project-box {
+    box-sizing: border-box;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-top: 5rem;
+    gap: 2rem;
+
+    animation: fadein 1s ease 0.15s both;
+}
+.project-item {
+    box-sizing: border-box;
+    height: 18rem;
+    /* From https://css.glass */
+    background: rgba(245, 245, 245, 0.46);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.3px);
+    -webkit-backdrop-filter: blur(9.3px);
+
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    min-width: 22rem;
+}
+.project-item img {
+    height: 12rem;
+    object-fit: contain;
+}
+.project-item a img {
+    height: 0.78rem !important;
+    margin-left: 0.11rem;
+}
+
+li img {
+    height: 1.1rem;
+    vertical-align: bottom;
+    padding-right: 0.3rem;
+}
+ul {
+    padding: 0;
+    margin-top: 3rem;
+}
+li {
+    list-style-type: none;
+
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.46);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.3px);
+    -webkit-backdrop-filter: blur(9.3px);
+
+    padding: 1rem;
+
+    margin-bottom: 1rem;
+}
+.bigger-image {
+    transform: scale(1.5);
+    padding-left: 0.1rem;
+    padding-right: 0.5rem;
+}
+
+li:nth-child(1) {
+    animation: fadein 1s ease 0.3s both;
+}
+li:nth-child(2) {
+    animation: fadein 1s ease 0.5s both;
+}
+li:nth-child(3) {
+    animation: fadein 1s ease 0.7s both;
+}
+li:nth-child(4) {
+    animation: fadein 1s ease 0.9s both;
+}
+li:nth-child(5) {
+    animation: fadein 1s ease 1.1s both;
+}
+li:nth-child(6) {
+    animation: fadein 1s ease 1.3s both;
+}
+
+.tech-stack {
+    display: flex;
+    flex-direction: row;
+    gap: 0.4rem;
+}
+.tech-stack > div {
+    padding-left: 0.52rem;
+    padding-right: 0.52rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.46);
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(9.3px);
+    -webkit-backdrop-filter: blur(9.3px);
+}
+
+.competition-box {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+@media (max-width: 1420px) {
+    .project-box {
+        grid-template-columns: 1fr 1fr;
+        max-width: 60rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        gap: 1.7rem;
+    }
+    .project-item {
+        min-width: 20rem;
+    }
+}
+@media (max-width: 840px) {
+    .project-box {
+        grid-template-columns: 1fr;
+        max-width: 37rem;
+        padding-left: 6rem;
+        padding-right: 6rem;
+        gap: 1.4rem;
+    }
+    .project-item {
+        min-width: 19rem;
+    }
+}
+@media (max-width: 600px) {
+    .project-box {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .tech-stack {
+        font-size: 0.95rem;
+    }
+
+    li {
+        font-size: 0.9rem;
+    }
+    li img {
+        height: 1rem;
+    }
+}
+@media (max-width: 450px) {
+    .project-item {
+        height: 16rem;
+        min-width: 17.3rem;
+    }
+    .project-item img {
+        height: 10rem;
+    }
+    .tech-stack {
+        font-size: 0.85rem;
+    }
+    li img {
+        height: 0.9rem;
+    }
+}
+@media (max-width: 400px) {
+    .project-box {
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 }
