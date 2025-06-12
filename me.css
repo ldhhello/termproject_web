@@ -133,6 +133,11 @@ li:nth-child(6) {
     -webkit-backdrop-filter: blur(9.3px);
 }
 
+.competition-box {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
 @media (max-width: 1420px) {
     .project-box {
         grid-template-columns: 1fr 1fr;
