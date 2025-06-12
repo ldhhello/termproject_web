@@ -54,6 +54,8 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+
+    min-width: 23rem;
 }
 .project-item img {
     height: 12rem;
