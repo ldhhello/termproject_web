@@ -198,6 +198,24 @@ header a {
     text-align: end;
 }
 
+@media (max-width: 1020px) {
+    .explain-box {
+        gap: 9rem;
+    }
+    .explain-box > img {
+        height: 17rem;
+    }
+}
+
+@media (max-width: 830px) {
+    .explain-box {
+        gap: 3rem;
+    }
+    .explain-box > img {
+        height: 16rem;
+    }
+}
+
 @media (max-width: 750px) {
     #profile-img {
         width: 12rem;
@@ -212,6 +230,18 @@ header a {
     #simple-introduce p {
         font-size: 1rem;
         width: 20rem;
+    }
+
+    .explain-box {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .explain-box p {
+        text-align: center;
+    }
+    .second-box {
+        gap: 3rem;
     }
 }
 
