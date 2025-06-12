@@ -15,6 +15,15 @@
     font-style: normal;
 }
 
+
+/* font from: https://noonnu.cc/font_page/419 */
+@font-face {
+    font-family: 'KyoboHand';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/KyoboHand.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 a.selected {
     font-family: 'Pretendard-Bold';
 }
@@ -177,6 +186,7 @@ header a {
     gap: 0.7rem;
     width: 20rem;
     /* font-family: 'Pretendard-Bold'; */
+    font-family: 'KyoboHand';
 }
 .reversed {
     flex-direction: row-reverse;
